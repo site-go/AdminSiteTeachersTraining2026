@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal | Teachers Training 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1; --primary-hover: #4f46e5;
+            --bg: #f8fafc; --white: #ffffff; --text: #1e293b;
+            --border: #e2e8f0; --accent: #10b981;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 20px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 50px; }
+        header h1 { font-size: 2.2rem; font-weight: 800; color: var(--text); margin-bottom: 10px; }
+        header p { color: #64748b; font-weight: 500; }
+
+        /* Grid System */
+        .section-title { 
+            font-size: 0.8rem; font-weight: 800; text-transform: uppercase; 
+            letter-spacing: 1px; color: var(--primary); margin: 40px 0 20px 10px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .section-title::after { content: ""; height: 1px; background: var(--border); flex: 1; }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card Styling */
+        .link-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-box {
+            background: var(--bg);
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; flex-shrink: 0;
+            transition: background 0.3s;
+        }
+
+        .link-card:hover .icon-box { background: #eef2ff; }
+
+        .content h3 { margin: 0; font-size: 1.05rem; font-weight: 700; color: #0f172a; }
+        .content p { margin: 4px 0 0; font-size: 0.85rem; color: #64748b; font-weight: 400; }
+        
+        .external-icon { margin-left: auto; color: #cbd5e1; font-size: 1.2rem; }
+
+        @media (max-width: 600px) { .link-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Teachers Training 2026</h1>
+        <p>Central Command & Management Portal</p>
+    </header>
+
+    <div class="section-title">Registration Gateways</div>
+    <div class="link-grid">
+        <a href="https://www.edulearnacademy.net/" target="_blank" class="link-card">
+            <div class="icon-box">🌐</div>
+            <div class="content">
+                <h3>Cluster Gateway</h3>
+                <p>Panay & Mindanao main selection site.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://site-go.github.io/" target="_blank" class="link-card">
+            <div class="icon-box">📝</div>
+            <div class="content">
+                <h3>Original Registration</h3>
+                <p>Primary public registration landing page.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+    </div>
+
+    <div class="section-title">Administrative Terminals</div>
+    <div class="link-grid">
+        <a href="https://site-go.github.io/TeachersTrainingDashboard/" target="_blank" class="link-card">
+            <div class="icon-box">📊</div>
+            <div class="content">
+                <h3>Live Dashboard</h3>
+                <p>Monitor real-time enrollment statistics.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://site-go.github.io/TeachersTrainingIdPrint/" target="_blank" class="link-card">
+            <div class="icon-box">🆔</div>
+            <div class="content">
+                <h3>ID Printing Terminal</h3>
+                <p>Generate and print participant IDs.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://site-go.github.io/TeachersTrainingCertificatePrint/" target="_blank" class="link-card">
+            <div class="icon-box">📜</div>
+            <div class="content">
+                <h3>Certificate Terminal</h3>
+                <p>Print workshop completion certificates.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://site-go.github.io/TeachersTrainingRoomAssignments/" target="_blank" class="link-card">
+            <div class="icon-box">🏫</div>
+            <div class="content">
+                <h3>Room Assignments</h3>
+                <p>View and manage venue logistics.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+    </div>
+
+    <div class="section-title">Google Sheet Databases</div>
+    <div class="link-grid">
+        <a href="https://docs.google.com/spreadsheets/d/1kt6RjxvSletjGpBfveoUBX4g98Fje8qZDYulA7LR6wk/edit?usp=sharing" target="_blank" class="link-card">
+            <div class="icon-box" style="color: #10b981;">🟢</div>
+            <div class="content">
+                <h3>Original Database</h3>
+                <p>Master Sheet for general registrations.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1I9x8OKSrLAy7hWprF0Ye2TJt_fjEYIbE6Fjyw_iCqbc/edit?usp=sharing" target="_blank" class="link-card">
+            <div class="icon-box" style="color: #0ea5e9;">🔵</div>
+            <div class="content">
+                <h3>Panay Database</h3>
+                <p>Western Visayas cluster records.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1PPDHXopXrCVJ8WaC2qs0evqsw27F-eeGhBwZ7gcKqpU/edit?usp=sharing" target="_blank" class="link-card">
+            <div class="icon-box" style="color: #f59e0b;">🟡</div>
+            <div class="content">
+                <h3>Mindanao Database</h3>
+                <p>Land of Promise cluster records.</p>
+            </div>
+            <div class="external-icon">↗</div>
+        </a>
+    </div>
+
+    <footer style="margin-top: 80px; text-align: center; font-size: 0.75rem; color: #94a3b8; font-weight: 600;">
+        &copy; 2026 EDULEARN ACADEMY & ITECH SOLUTIONS. Internal Use Only.
+    </footer>
+</div>
+
+</body>
+</html>
